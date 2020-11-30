@@ -4,7 +4,7 @@ E-commerce app: [crwnclothingecom.com](https://github.com/sehermahmud/crwn-cloth
 
 Crwn Clothing is a Clothing E-commerce app were people can buy hats, jacket, women stuffs...etc. This is a very big, large E-commerce project that i tried to the end.
 
-Features are:
+### Features are:
 
 #### 1) authentication: use firebase to handle authentication
 
