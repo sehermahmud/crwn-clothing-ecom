@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/sehermahmud/friendlytix">
-    <img src="./image/crown.svg" alt="Logo" width="50%" height="71%">
+    <img src="./image/crown.svg" alt="Logo" width="40%" height="50%">
   </a>
 </p>
 
