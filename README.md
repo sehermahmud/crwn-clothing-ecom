@@ -1,6 +1,6 @@
 <p align="center">
   <a href="https://github.com/sehermahmud/crwn-clothing-ecom">
-    <img src="./image/crown.svg" alt="Logo" width="30%" height="40%">
+    <img src="./image/crown.svg" alt="Logo" width="25%" height="35%">
   </a>
 </p>
 
