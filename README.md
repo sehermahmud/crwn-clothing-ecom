@@ -1,3 +1,9 @@
+<p align="center">
+  <a href="https://github.com/sehermahmud/friendlytix">
+    <img src="./image/crown.svg" alt="Logo" width="50%" height="71%">
+  </a>
+</p>
+
 # Crwn Clothing
 
 E-commerce app: [crwnclothingecom.com](https://github.com/sehermahmud/crwn-clothing-ecom).
