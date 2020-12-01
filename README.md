@@ -56,7 +56,7 @@ Crwn Clothing is a Clothing E-commerce app were people can buy hats, jacket, wom
 
 ##### d) Payment: Pay with Stripe api, so we can handle payments. ( but the payment is in a test mode )
 
-##### Installation Guide
+### Installation Guide
 
 1. git clone https://github.com/sehermahmud/crwn-clothing-ecom.git
 
