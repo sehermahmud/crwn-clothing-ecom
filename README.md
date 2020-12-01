@@ -1,12 +1,12 @@
 <p align="center">
-  <a href="https://github.com/sehermahmud/friendlytix">
+  <a href="https://github.com/sehermahmud/crwn-clothing-ecom">
     <img src="./image/crown.svg" alt="Logo" width="30%" height="40%">
   </a>
 </p>
 
 # Crwn Clothing
 
-E-commerce app: [crwnclothingecom.com](https://github.com/sehermahmud/crwn-clothing-ecom).
+E-commerce app: [crwnclothingecom.com](https://github.com/sehermahmud/crwn-clothing-ecom)
 
 Crwn Clothing is a Clothing E-commerce app were people can buy hats, jacket, women stuffs...etc. This is a very big, large E-commerce project that i tried to do till the end.
 
