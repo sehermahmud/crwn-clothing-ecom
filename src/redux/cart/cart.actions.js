@@ -1,20 +1,25 @@
-import CartActionTypes from './cart.types';
+import { CartActionTypes } from './cart.types';
 
-export const toggleCartHidden = () => ({
-  type: CartActionTypes.TOGGLE_CART_HIDDEN
-});
-
-export const addItem = item => ({
+export const addItemToCart = cartItem => ({
   type: CartActionTypes.ADD_ITEM,
-  payload: item
+  payload: cartItem
 });
 
-export const removeItem = item => ({
+export const removeItemFromCart = id => ({
   type: CartActionTypes.REMOVE_ITEM,
-  payload: item
+  payload: id
 });
 
-export const clearItemFromCart = item => ({
-  type: CartActionTypes.CLEAR_ITEM_FROM_CART,
-  payload: item
+export const toggleCartHidden = (bool = null) => ({
+  type: CartActionTypes.TOGGLE_CART_HIDDEN,
+  payload: bool
+});
+
+export const removeItemAllFromCart = id => ({
+  type: CartActionTypes.REMOVE_ITEM_ALL,
+  payload: id
+});
+
+export const resetCart = () => ({
+  type: CartActionTypes.RESET_CART
 });
