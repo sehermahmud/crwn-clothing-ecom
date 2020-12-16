@@ -7,7 +7,6 @@ export const HeaderContainer = styled.div`
   display: flex;
   justify-content: space-between;
   margin-bottom: 25px;
-  position: relative;
 `;
 
 export const LogoContainer = styled(Link)`
@@ -17,19 +16,14 @@ export const LogoContainer = styled(Link)`
 `;
 
 export const OptionsContainer = styled.div`
-  min-width: 50%;
+  width: 50%;
   height: 100%;
   display: flex;
-  align-items: flex-end;
+  align-items: center;
   justify-content: flex-end;
-
-  & > :last-child {
-    margin-left: 15px;
-  }
 `;
 
 export const OptionLink = styled(Link)`
   padding: 10px 15px;
-  margin: 0 10px;
   cursor: pointer;
 `;

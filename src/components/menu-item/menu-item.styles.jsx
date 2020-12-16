@@ -1,21 +1,22 @@
 import styled from 'styled-components';
 
 export const MenuItemContainer = styled.div`
+	height: ${({ size }) => (size ? '380px' : '240px')};
 	min-width: 30%;
-	margin: 0 7.5px 15px;
 	overflow: hidden;
 	flex: 1 1 auto;
 	display: flex;
 	align-items: center;
 	justify-content: center;
-	position: relative;
-	height: ${({ small }) => (small ? '240px' : '380px')};
+	border: 1px solid black;
+	margin: 0 7.5px 15px;
+	overflow: hidden;
 
 	&:hover {
 		cursor: pointer;
 
-		& .background-image-container {
-			transform: scale(1.1) translate3d(0, 0, 0);
+		& .background-image {
+			transform: scale(1.1);
 			transition: transform 6s cubic-bezier(0.25, 0.45, 0.45, 0.95);
 		}
 
@@ -38,7 +39,6 @@ export const BackgroundImageContainer = styled.div`
   height: 100%;
   background-size: cover;
   background-position: center;
-  z-index: 1;
   background-image: ${({ imageUrl }) => `url(${imageUrl})`};
 `;
 
@@ -49,9 +49,9 @@ export const ContentContainer = styled.div`
   flex-direction: column;
   align-items: center;
   justify-content: center;
+  border: 1px solid black;
   background-color: white;
   opacity: 0.7;
-  z-index: 2;
   position: absolute;
 `;
 

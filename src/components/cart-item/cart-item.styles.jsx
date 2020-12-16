@@ -5,10 +5,10 @@ export const CartItemContainer = styled.div`
   display: flex;
   height: 80px;
   margin-bottom: 15px;
+`;
 
-  img {
-    width: 30%;
-  }
+export const CartItemImage = styled.img`
+  width: 30%;
 `;
 
 export const ItemDetailsContainer = styled.div`

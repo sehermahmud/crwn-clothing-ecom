@@ -1,10 +1,7 @@
 import React from 'react';
-import { connect } from 'react-redux';
-import { push } from 'connected-react-router';
+import { withRouter } from 'react-router-dom';
 
 import CollectionItem from '../collection-item/collection-item.component';
-
-import { getLocationPathname } from '../../redux/router/router.selectors';
 
 import {
   CollectionPreviewContainer,
@@ -12,28 +9,19 @@ import {
   PreviewContainer
 } from './collection-preview.styles';
 
-const CollectionPreview = ({ title, items, routeName, push, pathname }) => (
+const CollectionPreview = ({ title, items, history, match, routeName }) => (
   <CollectionPreviewContainer>
-    <TitleContainer onClick={() => push(`${pathname}/${routeName}`)}>
-      {title}
+    <TitleContainer onClick={() => history.push(`${match.path}/${routeName}`)}>
+      {title.toUpperCase()}
     </TitleContainer>
     <PreviewContainer>
-      {items.map((item, i) => (
-        <CollectionItem key={i} item={item} />
-      ))}
+      {items
+        .filter((item, idx) => idx < 4)
+        .map(item => (
+          <CollectionItem key={item.id} item={item} />
+        ))}
     </PreviewContainer>
   </CollectionPreviewContainer>
 );
 
-const mapStateToProps = state => ({
-  pathname: getLocationPathname(state)
-});
-
-const mapDispatchToProps = dispatch => ({
-  push: route => dispatch(push(route))
-});
-
-export default connect(
-  mapStateToProps,
-  mapDispatchToProps
-)(CollectionPreview);
+export default withRouter(CollectionPreview);
