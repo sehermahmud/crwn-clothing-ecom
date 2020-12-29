@@ -65,12 +65,12 @@ const SignIn = ({ emailSignInStart, googleSignInStart }) => {
             isGoogleSignIn
           >
             Sign in with Google
-            </CustomButton>
+          </CustomButton>
         </ButtonsBarContainer>
       </form>
     </SignInContainer>
   );
-}
+};
 
 const mapDispatchToProps = dispatch => ({
   googleSignInStart: () => dispatch(googleSignInStart()),
