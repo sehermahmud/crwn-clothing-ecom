@@ -11,14 +11,14 @@ import {
   CartDropdownContainer,
   CartDropdownButton,
   EmptyMessageContainer,
-  CartItemsContainer
+  CartItemsContainer,
 } from './cart-dropdown.styles';
 
 const CartDropdown = ({ cartItems, history, dispatch }) => (
   <CartDropdownContainer>
     <CartItemsContainer>
       {cartItems.length ? (
-        cartItems.map(cartItem => (
+        cartItems.map((cartItem) => (
           <CartItem key={cartItem.id} item={cartItem} />
         ))
       ) : (
@@ -37,7 +37,7 @@ const CartDropdown = ({ cartItems, history, dispatch }) => (
 );
 
 const mapStateToProps = createStructuredSelector({
-  cartItems: selectCartItems
+  cartItems: selectCartItems,
 });
 
 export default withRouter(connect(mapStateToProps)(CartDropdown));
