@@ -1,11 +1,10 @@
-import React, { lazy, Suspense, useEffect } from 'react';
+import React, { useEffect, lazy, Suspense } from 'react';
 import { Switch, Route, Redirect } from 'react-router-dom';
 import { connect } from 'react-redux';
 import { createStructuredSelector } from 'reselect';
-import { CircularProgress } from '@material-ui/core';
 
 import Header from './components/header/header.component';
-import CheckoutPage from './pages/checkout/checkout.component';
+import Spinner from './components/spinner/spinner.component';
 
 import { GlobalStyle } from './global.styles';
 
@@ -17,6 +16,7 @@ const ShopPage = lazy(() => import('./pages/shop/shop.component'));
 const SignInAndSignUpPage = lazy(() =>
   import('./pages/sign-in-and-sign-up/sign-in-and-sign-up.component')
 );
+const CheckoutPage = lazy(() => import('./pages/checkout/checkout.component'));
 
 const App = ({ checkUserSession, currentUser }) => {
   useEffect(() => {
@@ -28,22 +28,10 @@ const App = ({ checkUserSession, currentUser }) => {
       <GlobalStyle />
       <Header />
       <Switch>
-        <Suspense
-          fallback={
-            <div
-              style={{
-                alignItems: 'center',
-                justifyContent: 'center',
-                textAlign: 'center',
-              }}
-            >
-              <CircularProgress />{' '}
-              <h4 style={{ textAlign: 'center' }}>Loading...</h4>
-            </div>
-          }
-        >
+        <Suspense fallback={<Spinner />}>
           <Route exact path="/" component={HomePage} />
           <Route path="/shop" component={ShopPage} />
+          <Route exact path="/checkout" component={CheckoutPage} />
           <Route
             exact
             path="/signin"
@@ -52,7 +40,6 @@ const App = ({ checkUserSession, currentUser }) => {
             }
           />
         </Suspense>
-        <Route exact path="/checkout" component={CheckoutPage} />
       </Switch>
     </div>
   );

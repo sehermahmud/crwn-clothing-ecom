@@ -45,7 +45,11 @@ const CheckoutPage = ({ cartItems, total, currentUser }) => (
         ))}
         <TotalContainer>TOTAL: ${total}</TotalContainer>
       </Fragment>
-    ) : null}
+    ) : (
+      <div>
+        <h4>Cart is Empty or sign-in or sign-up to see yout cart</h4>
+      </div>
+    )}
     {currentUser && cartItems.length > 0 ? (
       <Fragment>
         <WarningContainer>
