@@ -1,0 +1,25 @@
+const MyDatabase = [
+  'form-name-seher-demo.netlify.app',
+  'mini-admin-shop-seher-demo.web.app',
+  'monster-killer-seher-demo-game.netlify.app',
+  'my-movie-list-seher-demo.netlify.app',
+  'personal-movie-database-seher-demo.netlify.app',
+  'project-planner-seher-demo.web.app',
+  'react-beach-resort-recording-seher.netlify.app',
+  'react-phone-store-recording-seher.netlify.app',
+  'rock-paper-scissors-seher-demo-game.netlify.app',
+  'seher-development.vercel.app',
+  'unconventional-calculator-seher-demo.netlify.app',
+  'connect-four-game-safin.netlify.app',
+  'cup-animation.netlify.app',
+  'different-dinosaurs.netlify.app',
+  'frogger-game-safin.netlify.app',
+  'memory-game-safin.netlify.app',
+  'snake-game-safin.netlify.app',
+  'space-imadrs-game-safin.netlify',
+  'vacationtime-safin.netlify.app',
+  'ufo-hunter.netlify.app',
+  'whack-a-mole-game-safin.netlify.app',
+];
+
+export default MyDatabase;
